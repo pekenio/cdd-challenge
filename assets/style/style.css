@@ -1,0 +1,383 @@
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll-to-top{
+    display: none;
+}
+
+header{
+    height: fit-content;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+header nav{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li{
+    padding: 20px;
+    
+}
+header nav ul i.fa-times{
+    display: none;
+}
+
+header nav ul li.active{
+    background-color: maroon;
+    
+}
+
+header nav ul li.active >a{
+    color: white;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:gray;
+}
+
+header nav ul li:hover:not([class="active"]) >a{
+    color: maroon;
+}
+header nav .responsive-bars{
+    display: none;
+}
+
+header nav .responsive-bars i.fa-bars{
+    font-size: 25px;
+}
+header .page-title{
+   text-align: center;
+   width: 100%;
+   font-size: 40px;
+}
+
+header .page-title span{
+    color: maroon;
+}
+
+header .banner-image{
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+header .banner-image .slider{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: .3s ease;
+    
+}
+header .banner-image .slider img{
+    width: 33.33%;
+    height: 100%;
+}
+header .banner-image:hover > .slider-button{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+}
+header .banner-image .slider-button{
+    display: none;
+}
+
+
+header .banner-image .slider-button i{
+    font-size: 50px;
+    color: white;
+}
+
+header .banner-image .slider-button .slider-button-right , header .banner-image .slider-button .slider-button-left{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
+    opacity: .8;
+    cursor: pointer;
+}
+
+main .works{
+    width: 100%;
+    margin:20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .works .container{
+    width: calc(80% /3);
+    margin: auto;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main .works .container .more-info-description{
+    position: absolute;
+    right: 100%;
+    transition: .5s ease;
+    background-color: white;
+    top: 0;
+    height: 100%;
+    border: 2px solid silver;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 999;
+    width: 100%;
+}
+main .works .container .more-info-description.more{
+    right: 0;
+}
+main .works .container .more-info-text{
+    height: 95%;
+    margin: 10px 0 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+main .works .container .more-info-text::-webkit-scrollbar{
+    width: 0px;
+}
+
+main .works .container .more-info-description .close-info{
+    height: 5%;
+    width: 100%;
+    position: relative;
+}
+
+main .works .container .more-info-description .close-info i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+main .works .container .content{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+main .works .container .content .content-image{
+    width: 100%;
+}
+
+main .works .container .content .content-image img{
+    width: 100%;
+    height: auto;
+}
+main .works .container .content .content-header{
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    color: white;
+    background-color: maroon;
+    margin: 0;
+    
+}
+
+main .works .container .content .content-descript{
+    color: white;
+    text-align: justify;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+main .works .container .content .stick-plus{
+    height: fit-content;
+    width: 100%;
+    cursor: pointer;
+   
+}
+
+main .works .container .content .stick-plus img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main .overs-service{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+main .overs-service div{
+    width: calc(80%/3);
+    margin:30px auto;
+}
+
+main .overs-service  div .text-maroon{
+    color: maroon;
+    font-weight: bold;
+}
+main .overs-service div .title{
+    width: 100%;
+    text-align: justify;
+    color: gray;
+}
+
+main .overs-service  div button{
+    border: none;
+    padding: 10px;
+    color: white;
+    background-image: url("../img/bg.png");
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+    border-top: 2px solid gray;
+    
+}
+
+footer .content{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+
+footer .content .social-link i{
+    font-size: 40px;
+    
+    
+}
+
+footer .content .social-link i.fa-facebook-square{
+    color: #4267B2;
+}
+
+footer .content .social-link i.fa-tumblr-square{
+    color: #36465D;
+}
+
+footer .content .social-link i.fa-google-plus-square{
+    color: #DB4437;
+}
+
+@media screen and (max-width:750px) {
+
+    .scroll-to-top.scroll{
+        display: block;
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+        background-color: maroon;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        z-index: 9999;
+        
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    header nav ul{
+        position: absolute;
+        display: block;
+        height: fit-content;
+        background-color: white;
+        border-bottom: 1px solid silver;
+        z-index: 999;
+        width: 100%;
+        top: -100%;
+        transition: .3s ease-in-out;
+
+
+    }
+    
+    header nav.open ul{
+        top: 0%;
+        transition: .3s ease;
+    }
+
+    header nav.open ul i.fa-times{
+        display: block;
+        font-size: 30px;
+        text-align: right;
+        cursor: pointer;
+        margin: 5px 5px 0 0;
+    }
+    
+
+
+    header nav .responsive-bars{
+        display: block;
+        margin: 20px;
+        height: fit-content;
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    header .page-title{
+        font-size: 20px;
+    }
+    header .banner-image{
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
+    
+    
+    main .works{
+        display: block;
+    }
+
+    main .works .container{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    main .overs-service{
+        display: block;
+    }
+    main .overs-service div{
+        width: 90%;
+        margin:30px auto;
+    }
+    
+}
